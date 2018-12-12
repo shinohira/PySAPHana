@@ -1,0 +1,44 @@
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+    background: #f8f9fa;
+    padding: 10px;
+    border-bottom: .05rem solid #e7e9ed;
+}
+
+.table td,
+.table th {
+    border-bottom: .05rem solid #e7e9ed;
+    padding: .2rem .4rem;
+    white-space: nowrap;
+}
+
+.container.grid-xxl {
+    max-width: 1536px;
+}
+
+.card-fix-4,
+.btn-fix-4 {
+    width: 4em
+}
+
+.card-fix-6,
+.btn-fix-6 {
+    width: 6em
+}
+
+.card-fix-8,
+.btn-fix-8 {
+    width: 8em
+}
+
+.card-fix-10,
+.btn-fix-10 {
+    width: 10em
+}
+
+.absolute {
+    position: absolute;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }} - SE16</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/spectre.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/site.css" />
+    <link rel="shortcut icon" href="/static/img/hana.png">
+</head>
+
+<body>
+    <div class="container grid-xxl">
+        <div id="topnav" class="d-hide"></div>
+        <header class="navbar sticky">
+            <section class="navbar-section">
+                <a class="navbar-brand mr-2" href="/">
+                    <img src="/static/img/hana.svg" style="vertical-align: middle; width:16%; height: auto" />SE16 Home
+                </a>
+            </section>
+            <section class="navbar-section">
+                <a class="btn btn-link btn-fix-8 mr-2" href="#topnav" tabindex="-1">▲ Up you go ▲</a>
+            </section>
+        </header>
+
+        <div class="mr-2">
+        {%for category, message in get_flashed_messages(with_categories=true)%}
+            <span class="{{category}}">{{message}}</span>
+        {%endfor%}
+        </div>
+
+        {%block content%}{%endblock%}
+   
+        <div class="divider"></div>
+        <footer>
+            <span>FVO SAP HANA (RDQ) | </span>
+            <span><a href="https://www.leanx.eu/en/sap/table/search" target="_blank">Table Search...</a></span>
+        </footer>
+    </div>
+</body>
+</html>
